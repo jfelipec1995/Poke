@@ -1,0 +1,103 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.pokem{
+    position: relative;
+    max-height:100px;
+    max-width:100px;
+}
+.contri{
+    position:relative;
+    max-height:250px;
+    max-width:250px;
+    top:40px;
+    left:0px;
+    
+}
+
+.contri1{
+    position:relative;
+    max-height:250px;
+    max-width:250px;
+    left:900px;
+    top: -300px
+}
+
+.vida{
+    position:relative;
+    top:10px;
+    max-width:300px;
+}
+
+.vida1{
+    position:relative;
+    top:-280px;
+    max-width:300px;
+    right:-830px
+}
+.mensaje{
+    position:relative;
+    left:258px;
+    top:-220px;
+}
+
+.atac{
+    position:relative;
+   
+}
+
+.bata{
+    background-image:url(http://vignette1.wikia.nocookie.net/es.pokemon/images/1/17/EP258_Campo_de_batalla_del_Gimnasio_Costero.png/revision/latest?cb=20130505165321);
+    background-size: cover;
+    min-height:100vh;
+}
+
+body{
+    background-color: #7e7df1
+}
+
+.opciones{
+    color:#000000
+}
+
+.winner{
+    position: relative;
+    max-height: 200px;
+    max-width:200px;
+    right: -490px;
+    top: 100px;
+
+}
+.pol{
+    background-image:url("http://video2gif.info/HyZrzhdF3z8/5609_5706.gif");
+}
+.let{
+    color: yellow;
+    position:relative;
+    left: 480px;
+    top: 370px;
+}
+   
+    
+}

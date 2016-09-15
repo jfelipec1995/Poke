@@ -1,0 +1,28 @@
+﻿@model Pokemon.Models.Entrenador
+<div class="bata">
+<div>
+    <img class="contri"src=@Model.pokemon.Url />
+    <h2 class="mensaje">@Model.pokemon.Nombre yo te elijo</h2>
+    <div>
+        <button class="atac" type="button" data-url="@Url.Content(string.Format("~/Entrenadors/Atacar/{0}",Model.Id))">Atacar</button>
+      <div class="vida">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: @Model.pokemon.Vida%">
+                <span class="sr-only">80% Complete (success)</span>
+            </div>
+        </div>
+       </div>
+    </div>
+
+</div>
+<div>
+    <img class="contri1"src=@Model.rival.Url />
+    <div class="vida1">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: @Model.rival.Vida%">
+                <span class="sr-only">80% Complete (success)</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

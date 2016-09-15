@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Pokemon.Models.Poke>
+
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Defensa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ataque)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a data-url="@Url.Content(string.Format("~/Entrenadors/AgregarPokemon/{0}", item.Id_poke))">
+                    <img class="pokem" src=@item.Url />
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Defensa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ataque)
+            </td>
+            
+        </tr>
+
+    }
+</table>
+
